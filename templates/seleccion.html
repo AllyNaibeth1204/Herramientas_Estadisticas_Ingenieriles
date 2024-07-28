@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion</title>
+    <!--Link para vincular la hoja de css--> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!--Link para vincular el js-->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <!--Container que guarda el selector-->
+    <h2 id="enunciado">Selecciona cómo deseas que se dé la introducción de datos:</h2>
+    <div class="dropdown" id="botonSelector">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Seleccione...
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="{{ url_for('entrada') }}">Mis datos</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('random') }}">Datos generados por el sistema</a></li>
+        </ul>
+    </div>  
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada</title>
+    <!--Link para vincular la hoja de css--> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--Link para vincular js-->
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <!-- Bootstrap Bundle with Popper from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <form action="/generar_numeros" method="post">
+        <h3 id="indicaciones">Llena los siguientes campos:</h3>
+        <input id="numerito" type="number" name="num" placeholder="Cantidad de datos">
+        <input id="mini" type="number" name="Min_place" placeholder="Minimo">
+        <input id="maxi" type="number" name="Max_place" placeholder="Maximo">
+        <button type="submit" id="generar">Generar Números</button>
+    </form>
+
+    {% if data_list %}
+    <h4 id="generados">Números Generados:</h4>
+    <p>{{ data_list }}</p>
+    <form action="/randomizar" method="post">
+        <input type="hidden" name="num" value="{{ request.form['num'] }}">
+        <input type="hidden" name="Min_place" value="{{ request.form['Min_place'] }}">
+        <input type="hidden" name="Max_place" value="{{ request.form['Max_place'] }}">
+        <button type="submit" id="let">Enviar datos y Generar Tablas</button>
+    </form>
+    {% endif %}
+</body>
+</html>

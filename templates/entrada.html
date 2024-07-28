@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada</title>
+    <!--Link para vincular la hoja de css--> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--Link para vincular js-->
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <!-- Bootstrap Bundle with Popper from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <h2 class="move-left" id="datitos">Digita uno por uno los datos</h2>
+    <div class="input-container">
+        <input type="number" id="inputDato" placeholder="Añade tus datos aquí">
+        <div class="dropdown-container">
+             <ul id="listaDatos"></ul>
+        </div>
+    </div>
+    <button id="btnAgregar">Agregar</button>
+    <button id="btnEnviar">Confirmar envío de los datos</button>
+    
+    <h2 class="move-left" id="guardados">Datos Almacenados:</h2>
+    <div class="data-container">
+        <div class="item-container">
+            <ul id="listaDatos"></ul>
+        </div>     
+    </div>
+
+    <form action="/resultados" method="post">
+        <button id="last" type="submit" > Ver tablas de frecuencias</button>
+    </form>
+    
+    <form action="/resultados" method="post" id="dataForm"></form>
+
+</body>
+</html>

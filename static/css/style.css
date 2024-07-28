@@ -1,0 +1,639 @@
+/*Cuerpo del programa*/
+body {
+    background-image: url('https://st2.depositphotos.com/6504442/9281/i/450/depositphotos_92819326-stock-photo-raster-abstract-dark-blue-blurred.jpg');
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Cubrir toda el área del fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad al 50% */
+    /*opacity: 0.7;  Opacidad del elemento */
+}
+
+/*Letras utilizadas*/
+h1 {
+        font-family: "Arial Black";
+        font-weight: 400 !important;
+        font-style: normal;
+        text-align: center;
+        color: antiquewhite !important;
+        margin-top: 6%;
+    }
+
+#holi{
+    margin-top: 2%;
+}
+      
+h2{
+    margin-top: 0.5% !important;
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: antiquewhite !important; /* Anula el color definido por Bootstrap */
+    font-size: 140%
+}
+
+
+#enunciado{
+    margin-top: 220px !important;
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: antiquewhite !important; /* Anula el color definido por Bootstrap */
+    font-size: 24px
+
+}
+
+/*Sección de bienvenida*/
+#inicio{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+/*Boton para dar inicio a todo*/
+.btn-outline-primary{
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 1.5% 1.25%; /* Relleno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 1rem; /* Tamaño de la fuente */
+    margin: 1% auto; /* Márgenes alrededor del botón, centrado horizontalmente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 0.4% solid #fffcfc; /* Borde */
+    width: 20%; /* Ajusta el ancho a un porcentaje */
+    border-radius: 1px;
+
+}
+
+.btn-outline-primary:hover {
+    background-color: #a04582;
+}
+
+.btn-outline-primary{
+    position: fixed;
+    top: 60%; /* Cambia la posición vertical del botón */
+    left: 50%; /* Cambia la posición horizontal del botón */
+    transform: translate(-50%, -50%); /* Corrige la posición para que el botón esté centrado */
+}
+
+/*Select para seleccionar cómo será la introducción de datos*/
+.botonSelector{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    margin-top: 240px;
+    width: 40%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+        top: 70px; /* Cambia la posición vertical del botón */
+        right: 472px; /* Cambia la posición horizontal del botón */
+}
+
+
+.hidden{
+    display: none;
+}
+
+/*Botón de envío*/
+#botonSeleccion{
+    padding: 10px 32px; /* Relleno del botón */
+    text-align: center ; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Márgenes alrededor del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 2px solid #e9e0e0; /* Sin borde */
+    border-radius: 4px;
+    width: 120px;
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    position: fixed;
+        top: 450px; /* Cambia la posición vertical del botón */
+        right: 672px; /* Cambia la posición horizontal del botón */
+}
+
+#botonSeleccion:hover {
+    background-color: #a04582;
+}
+
+/* Botón principal del dropdown */
+/* Estilo para el botón del dropdown */
+.btn-secondary {
+    background-color: #000000; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border-color: #6c757d; /* Color del borde */
+    /* Otros estilos según necesites */
+}
+
+li{
+    background-color: #f1f1f1; /* Color de fondo */
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Borde */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra */
+}
+
+/*ul{
+    background-color: #f1f1f1; /* Color de fondo */
+    /*border: 1px solid rgba(0, 0, 0, 0.15); /* Borde */
+    /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra */
+
+
+/* Estilo para el menú desplegable */
+#dropdownMenuButton{
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #71e5ff;
+    position: fixed;
+    top: 45%; /* Ajusta la posición vertical del botón */
+    right: 52%; /* Ajusta la posición horizontal del botón */
+    transform: translate(50%, -50%); /* Ajusta la posición para que el botón esté centrado */
+}
+
+/* Estilo para los elementos del menú desplegable */
+.dropdown-item {
+    /*color: #95bfe8; /* Color del texto */
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Digitar la cantidad de datos a usar si selecciona que usuará sus propios datos*/
+/*Instrucciones para digitar cantidad de datos*/
+.mb-3{
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+/*Placeholder*/
+#inputCantidad{
+    width: 9%;
+    padding: 1%; /* Ajustado a un porcentaje */
+    margin: 1% 0; /* Ajustado a un porcentaje */
+    box-sizing: border-box;
+    border: 0.2% solid #ccc; /* Ajustado a un porcentaje */
+    border-radius: 4px; /* Mantiene el radio de borde en píxeles */
+    position: fixed;
+    top: 25%; /* Ajustado a un porcentaje basado en la altura del viewport */
+    right: 73%; /* Ajustado a un porcentaje basado en el ancho del viewport */
+    transform: translate(50%, -50%); /* Corrige la posición para centrar el botón */
+}
+
+
+
+#inputDato{
+    width: 15%;
+    padding: 1.2%; /* 12px convertido a porcentaje relativo */
+    margin: 1% 0; /* 10px convertido a porcentaje relativo */
+    box-sizing: border-box;
+    border: 0.2% solid #ccc; /* 2px convertido a porcentaje relativo */
+    border-radius: 0.4%; /* 4px convertido a porcentaje relativo */
+    position: fixed;
+    top: 26%; /* 150px convertido a porcentaje relativo */
+    right: 49%; /* 930px convertido a porcentaje relativo */
+}
+
+#btnAgregar{
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 32px; /* Relleno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Márgenes alrededor del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 2px solid #e9e0e0; /* Sin borde */
+    border-radius: 4px;
+    width: 200px;
+    position: fixed;
+        top: 28.83%; /* Cambia la posición vertical del botón */
+        right: 35.71%; /* Cambia la posición horizontal del botón */
+
+
+}
+
+#btnEnviar{
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 32px; /* Relleno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Márgenes alrededor del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 2px solid #e9e0e0; /* Sin borde */
+    border-radius: 4px;
+    width: 292px;
+    position: fixed;
+        top: 80.83%; /* Cambia la posición vertical del botón */
+        right: 49.74%; /* Cambia la posición horizontal del botón */
+
+
+}
+
+#last{
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 32px; /* Relleno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Márgenes alrededor del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 2px solid #e9e0e0; /* Sin borde */
+    border-radius: 4px;
+    width: 292px;
+    position: fixed;
+        top: 80.83%; /* Cambia la posición vertical del botón */
+        right: 29.74%; /* Cambia la posición horizontal del botón */
+
+
+}
+
+
+
+#listaDatos{
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0;
+    margin: 0;
+    color: #000; /* Números en negro */
+}
+
+
+#datitos{
+    margin-top: 120px !important;
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: antiquewhite !important; /* Anula el color definido por Bootstrap */
+    font-size: 24px
+}
+
+#guardados{
+    margin-top: 150px !important;
+    margin-left: -20px;
+    font-family: "Arial Black";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: antiquewhite !important; /* Anula el color definido por Bootstrap */
+    font-size: 24px
+}
+
+
+/*Lista de datos*/
+.input-container {
+    position: relative;
+    width: 300px;
+}
+
+.dropdown-container {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Asegúrate de mostrar este contenedor cuando sea necesario */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.dropdown-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 99%;
+    text-align: center;
+}
+
+.dropdown-container li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-container li:hover {
+    background-color: #f1f1f1;
+}
+
+.move-left {
+    margin-left: 20px;
+}
+
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#listaDatos {
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#listaDatos {
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+#tabla{
+    margin-top: 3.5% !important;
+    margin-bottom: 2% !important;
+}
+
+.mi-tabla {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+.mi-tabla td, .mi-tabla th {
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    text-align: center; 
+    font-family: "Arial Black";
+}
+
+.mi-tabla th {
+    background-color: #f2f2f2;
+}
+/*Seccion de las imagenes*/
+#histo{
+    cursor: zoom-in;
+    transition: transform 0.8s ease;
+}
+
+
+
+#poli{
+    cursor: zoom-in;
+    transition: transform 0.8s ease;
+}
+
+#asc{
+    cursor: zoom-in;
+    transition: transform 0.8s ease;
+}
+
+#des{
+    cursor: zoom-in;
+    transition: transform 0.8s ease;
+}
+
+.imagenes{
+    display: flex;
+    max-width: 13%;
+    height: 25%;
+    justify-content: 80% !important;
+    gap: 20px;
+    margin: 20px 0; /* Agrega margen superior e inferior para alejar del borde */
+    margin-left: 12%;
+}
+
+/*Información debajo de la tabla*/
+.resultados {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: antiquewhite;
+    margin-top: 2%;
+    font-family: "Arial Black";
+    text-align: center;
+    font-size: 0.4% !important;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: antiquewhite;
+    margin-top: 2.3%;
+    font-family: "Arial Black";
+    
+    text-align: center;
+    font-size: 0.4% !important;
+}
+
+
+
+.fila1, .fila2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.fila2 {
+    margin-top: 20px; /* Ajusta este valor según necesites espacio entre filas */
+}
+
+#indicaciones{
+    padding: 8px;
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    text-align: center; 
+    font-family: "Arial Black";
+    margin-top: 3% !important;
+    margin-bottom: 2% !important;
+}
+
+#generados{
+    padding: 8px;
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    text-align: center; 
+    font-family: "Arial Black";
+    margin-top: 9% !important;
+    margin-bottom: 2% !important;
+}
+    
+
+#numerito{
+    width: 13%;
+    padding: 1%; /* Ajustado a un porcentaje */
+    margin: 1% 0; /* Ajustado a un porcentaje */
+    box-sizing: border-box;
+    border: 0.2% solid #ccc; /* Ajustado a un porcentaje */
+    border-radius: 4px; /* Mantiene el radio de borde en píxeles */
+    position: fixed;
+        top: 18%; /* Ajustado a un porcentaje basado en la altura del viewport */
+        right: 70%; /* Ajustado a un porcentaje basado en el ancho del viewport */
+    transform: translate(50%, -50%); /* Corrige la posición para centrar el botón */       
+
+}
+
+#mini{
+    width: 9%;
+    padding: 1%; /* Ajustado a un porcentaje */
+    margin: 1% 0; /* Ajustado a un porcentaje */
+    box-sizing: border-box;
+    border: 0.2% solid #ccc; /* Ajustado a un porcentaje */
+    border-radius: 4px; /* Mantiene el radio de borde en píxeles */
+    position: fixed;
+        top: 18%; /* Ajustado a un porcentaje basado en la altura del viewport */
+        right: 59%; /* Ajustado a un porcentaje basado en el ancho del viewport */
+    transform: translate(50%, -50%); /* Corrige la posición para centrar el botón */
+
+}
+
+#maxi{
+    width: 9%;
+    padding: 1%; /* Ajustado a un porcentaje */
+    margin: 1% 0; /* Ajustado a un porcentaje */
+    box-sizing: border-box;
+    border: 0.2% solid #ccc; /* Ajustado a un porcentaje */
+    border-radius: 4px; /* Mantiene el radio de borde en píxeles */
+    position: fixed;
+        top: 18%; /* Ajustado a un porcentaje basado en la altura del viewport */
+        right: 50%; /* Ajustado a un porcentaje basado en el ancho del viewport */
+    transform: translate(50%, -50%); /* Corrige la posición para centrar el botón */
+}
+
+#generar{
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 1% 1%; /* Relleno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 1rem; /* Tamaño de la fuente */
+    margin: 1% auto; /* Márgenes alrededor del botón, centrado horizontalmente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 0.4% solid #fffcfc; /* Borde */
+    width: 20%; /* Ajusta el ancho a un porcentaje */
+    border-radius: 1px;
+    position: fixed;
+        top: 14%; /* 150px convertido a porcentaje relativo */
+        right: 25.3%; /* 930px convertido a porcentaje relativo */
+}
+
+#let{
+    font-family: "Arial Black", sans-serif;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 1% 1%; /* Relleno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    font-size: 1rem; /* Tamaño de la fuente */
+    margin: 1% auto; /* Márgenes alrededor del botón, centrado horizontalmente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 0.4% solid #fffcfc; /* Borde */
+    width: 20%; /* Ajusta el ancho a un porcentaje */
+    border-radius: 1px;
+    position: fixed;
+        top: 69%; /* 150px convertido a porcentaje relativo */
+        right: 40%; /* 930px convertido a porcentaje relativo */
+
+}
+
+p{
+    text-align: left;
+    color: white;
+    font-weight: 200;
+    text-align: center; 
+    font-family: "Arial Black";
+    margin-top: 1% !important;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+}
+
+
+/* CSS para las imágenes */
+.imagen {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.imagen-grande {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 1000;
+}
+
+.enlarged-size {
+    transform: scale(12);
+    transition: transform 0.12s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
